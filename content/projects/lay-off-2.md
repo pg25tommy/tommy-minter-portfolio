@@ -20,12 +20,13 @@ The goal is simple: escape with enough keycards or survive long enough to be the
 ---
 
 ## Technologies
-- **Engine**: Unity 2023.x
-- **Networking**: Mirror 96.8.1
-- **Server**: Unity Game Services (UGS)
-- **Rendering**: URP
-- **Platform**: PC
-- **Deployment**: Headless dedicated builds
+- Engine: Unity 2023.x
+- Language: C#
+- Networking: Mirror 96.8.1
+- Server: Unity Game Services (UGS)
+- Rendering: URP
+- Platform: PC
+- Deployment: Headless dedicated builds
 
 ---
 

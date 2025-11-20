@@ -1,7 +1,7 @@
 ---
 version: 1.0
 owner: Tommy Minter
-status: Active
+status: Released
 ---
 
 # Lay-Off — Project Specification
