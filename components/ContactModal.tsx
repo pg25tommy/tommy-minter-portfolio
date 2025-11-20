@@ -135,7 +135,7 @@ export default function ContactModal({ isOpen, onClose }: ContactModalProps) {
               {/* Header */}
               <h2 className="text-2xl font-bold text-text-primary mb-2">Get in Touch</h2>
               <p className="text-text-secondary mb-6">
-                Send me a message and I'll get back to you as soon as possible.
+                Send me a message and I&apos;ll get back to you as soon as possible.
               </p>
 
               {/* Form */}
