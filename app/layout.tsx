@@ -6,7 +6,7 @@ import Navigation from "@/components/Navigation";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Tommy Minter - Developer Portfolio",
+  title: "Tommy Minter - Building Cool Things",
   description: "Portfolio showcasing projects by Tommy Minter: Full-Stack Developer, Graphics Engineer, and Technical Artist",
 };
 
