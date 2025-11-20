@@ -16,6 +16,12 @@ BroHeat's BrickBreaker was built in a custom C++ engine. The challenge was to ad
 
 ---
 
+## Technologies
+- C++
+- Custom Engine
+
+---
+
 ## Programming Contributions
 
 ### Factory System for Bricks

@@ -1,7 +1,6 @@
 import Hero from "@/components/Hero";
 import ProjectCard from "@/components/ProjectCard";
-import AboutTeaser from "@/components/AboutTeaser";
-import ContactTeaser from "@/components/ContactTeaser";
+import HomeClient from "@/components/HomeClient";
 import { getAllProjects } from "@/lib/projects";
 
 export default async function Home() {
@@ -35,8 +34,7 @@ export default async function Home() {
         </div>
       </section>
 
-      <AboutTeaser />
-      <ContactTeaser />
+      <HomeClient />
 
       {/* Footer */}
       <footer className="py-8 px-6 border-t border-moss/20">

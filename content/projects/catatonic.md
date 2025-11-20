@@ -16,6 +16,12 @@ CataTonic is an isometric adventure game starring Hubert, a jazz-loving cat navi
 
 ---
 
+## Technologies
+- Unity
+- C#
+
+---
+
 ## Programming Contributions
 
 ### Music Combat System
@@ -32,8 +38,3 @@ CataTonic is an isometric adventure game starring Hubert, a jazz-loving cat navi
 - Spawn timing & placement
 - Difficulty scaling
 - Pacing control throughout levels
-
----
-
-## Photos
-*(Add images: Hubert concept art, dream levels, saxophone VFX, enemy encounters)*

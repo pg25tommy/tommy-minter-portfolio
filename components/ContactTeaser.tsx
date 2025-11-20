@@ -2,7 +2,11 @@
 
 import { motion } from "framer-motion";
 
-export default function ContactTeaser() {
+interface ContactTeaserProps {
+  onOpenContact: () => void;
+}
+
+export default function ContactTeaser({ onOpenContact }: ContactTeaserProps) {
   return (
     <section id="contact" className="py-20 px-6">
       <div className="max-w-4xl mx-auto">
@@ -21,12 +25,12 @@ export default function ContactTeaser() {
             Let&apos;s connect.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-              href="mailto:tommy@knocktwice.ca"
+            <button
+              onClick={onOpenContact}
               className="px-8 py-4 bg-mint text-grey-dark rounded-lg hover:bg-mint-light transition-all hover:scale-105 font-medium"
             >
               Get In Touch
-            </a>
+            </button>
             <a
               href="https://github.com/pg25tommy"
               target="_blank"

@@ -5,6 +5,7 @@ import { getProjectImages } from "@/lib/getProjectImages";
 import { getProjectVideo } from "@/lib/getProjectVideo";
 import ProjectGallery from "@/components/ProjectGallery";
 import ReactMarkdown from "react-markdown";
+import TechBadge from "@/components/TechBadge";
 
 export async function generateStaticParams() {
   const slugs = getAllProjectSlugs();
@@ -75,12 +76,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
           {project.metadata.technologies && (
             <div className="flex flex-wrap gap-2 mb-6">
               {project.metadata.technologies.split(",").map((tech, i) => (
-                <span
-                  key={i}
-                  className="text-sm px-3 py-1 bg-moss/30 text-text-secondary rounded"
-                >
-                  {tech.trim()}
-                </span>
+                <TechBadge key={i} tech={tech} size="md" />
               ))}
             </div>
           )}

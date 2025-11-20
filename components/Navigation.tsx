@@ -2,9 +2,11 @@
 
 import Link from "next/link";
 import { useState } from "react";
+import ContactModal from "./ContactModal";
 
 export default function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isContactOpen, setIsContactOpen] = useState(false);
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-grey-dark/80 backdrop-blur-md border-b border-moss/20">
@@ -42,12 +44,12 @@ export default function Navigation() {
             >
               LinkedIn
             </a>
-            <Link
-              href="/#contact"
+            <button
+              onClick={() => setIsContactOpen(true)}
               className="px-4 py-2 bg-mint text-grey-dark rounded-lg hover:bg-mint-light transition-colors font-medium"
             >
               Contact
-            </Link>
+            </button>
           </div>
 
           {/* Mobile Menu Button */}
@@ -114,16 +116,21 @@ export default function Navigation() {
             >
               LinkedIn
             </a>
-            <Link
-              href="/#contact"
+            <button
+              onClick={() => {
+                setIsContactOpen(true);
+                setIsMenuOpen(false);
+              }}
               className="px-4 py-2 bg-mint text-grey-dark rounded-lg hover:bg-mint-light transition-colors font-medium text-center"
-              onClick={() => setIsMenuOpen(false)}
             >
               Contact
-            </Link>
+            </button>
           </div>
         )}
       </div>
+
+      {/* Contact Modal */}
+      <ContactModal isOpen={isContactOpen} onClose={() => setIsContactOpen(false)} />
     </nav>
   );
 }

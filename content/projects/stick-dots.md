@@ -46,8 +46,3 @@ Stick Dots is a modernized lines-and-boxes strategy game developed in Unity. Pla
 - Drawing lines across clients
 - Square claiming logic
 - Extra-turn rules
-
----
-
-## Photos
-*(Add images: board UI, multiplayer lobby, captured squares, gameplay flow)*

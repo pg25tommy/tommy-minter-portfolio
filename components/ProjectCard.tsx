@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 import type { ProjectMetadata } from "@/lib/projects";
+import TechBadge from "./TechBadge";
 
 interface ProjectCardProps {
   project: ProjectMetadata;
@@ -53,12 +54,7 @@ export default function ProjectCard({ project, index }: ProjectCardProps) {
         {project.technologies && (
           <div className="flex flex-wrap gap-2 mb-6">
             {project.technologies.split(",").slice(0, 4).map((tech, i) => (
-              <span
-                key={i}
-                className="text-xs px-2 py-1 bg-moss/30 text-text-secondary rounded"
-              >
-                {tech.trim()}
-              </span>
+              <TechBadge key={i} tech={tech} size="sm" />
             ))}
           </div>
         )}
