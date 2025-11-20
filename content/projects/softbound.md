@@ -13,7 +13,7 @@ SoftBound is an analog-inspired scrapbook web application featuring a custom-bui
 
 ## Roles
 - Full-Stack Developer
-- Game Developer
+- Graphics & UI Programmer
 - System Architect
 
 ---
