@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --forest-dark: #04110b;
+  --forest-light: #061710;
+  --grey-dark: #101317;
+  --grey-light: #15181d;
+  --mint: #34d399;
+  --mint-light: #6ee7b7;
+  --moss: #3f5c4a;
+  --moss-light: #4b7a5a;
+  --text-primary: #f9fafb;
+  --text-secondary: #9ca3af;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  color: var(--text-primary);
+  background: linear-gradient(
+    to bottom,
+    var(--forest-dark),
+    var(--grey-dark)
+  );
+  min-height: 100vh;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
