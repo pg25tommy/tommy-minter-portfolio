@@ -74,8 +74,3 @@ SoftBound includes:
 - Secure backend
 - Public gallery
 - Fully analog-inspired UI
-
----
-
-## Photos
-*(Add images here — mockups, UI screenshots, engine tests, page examples)*

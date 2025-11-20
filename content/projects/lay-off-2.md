@@ -52,20 +52,10 @@ The world is presented as a sprawling office filled with interactable props, eac
 
 ## Development Status
 
-The project is currently in active development under the codename **Project Umbrella**. Core systems, multiplayer integration, movement, and trapping mechanics are functional.
+The project is currently in active development under the codename **[Project Umbrella](https://github.com/BorrowedUmbrella/ProjectUmbrella)**. Core systems, multiplayer integration, movement, and trapping mechanics are functional.
 
 **Next Steps:**
 - Additional level polish
 - Expanded trap types
 - UI refinement
 - Visual enhancements
-
----
-
-## Links
-- [GitHub Repository](https://github.com/BorrowedUmbrella/ProjectUmbrella)
-
----
-
-## Photos
-*(Add gameplay screenshots, trap demos, office environment shots, multiplayer action)*

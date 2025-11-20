@@ -33,8 +33,3 @@ BroHeat's BrickBreaker was built in a custom C++ engine. The challenge was to ad
 
 ## Outcome
 Delivered a fully playable game on an unfamiliar engine, demonstrating adaptability, low-level coding, and fast learning.
-
----
-
-## Photos
-*(Add photos: engine tools, paddle/ball behavior, brick layout, collision debug views)*

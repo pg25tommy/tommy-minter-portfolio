@@ -82,8 +82,3 @@ Includes:
 - Game concept
 - Main antagonist ("The Boss")
 - Full voice line script
-
----
-
-## Photos
-*(Add gameplay screenshots, trap demos, shader comparison shots, level design images)*
