@@ -11,15 +11,16 @@ export async function generateStaticParams() {
   return slugs.map((slug) => ({ slug }));
 }
 
-export default function ProjectPage({ params }: { params: { slug: string } }) {
+export default async function ProjectPage({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
   let project;
   let images: string[] = [];
   let video: string | null = null;
 
   try {
-    project = getProjectBySlug(params.slug);
-    images = getProjectImages(params.slug);
-    video = getProjectVideo(params.slug);
+    project = getProjectBySlug(slug);
+    images = getProjectImages(slug);
+    video = getProjectVideo(slug);
   } catch (error) {
     notFound();
   }
