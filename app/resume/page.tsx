@@ -96,11 +96,24 @@ export default function ResumePage() {
               title="Burger Heaven — Restaurant Website"
               role="Full-Stack Developer (Freelance)"
               location="New Westminster, BC"
-              dates="2025"
+              dates="2025 – 2026"
               bullets={[
                 "Built and shipped a production restaurant website with Next.js 14 and TypeScript featuring a retro diner aesthetic.",
                 "Implemented contact forms, job application system with resume uploads, and Google Maps integration.",
                 "Integrated Resend API for server-side email delivery with comprehensive input validation and HTML sanitization.",
+              ]}
+            />
+
+            <ExperienceEntry
+              title="SoftBound — Scrapbook Web App"
+              role="Full-Stack Developer / Graphics & UI Programmer / System Architect"
+              location="Vancouver, BC"
+              dates="2025 – 2026"
+              bullets={[
+                "Architecting and building an analog-inspired scrapbook web application with a custom PixiJS-powered browser graphics engine.",
+                "Implementing GPU-accelerated zoom, pan, drag-and-drop, rotation, and layered rendering (paper → photos → tape → UI).",
+                "Built secure backend with role-based access, protected API endpoints, admin authentication, and CRUD for scrapbook pages.",
+                "Designed for privacy and intentionality with a warm, tactile analog aesthetic — Polaroid frames, tape overlays, noise and grain.",
               ]}
             />
 
