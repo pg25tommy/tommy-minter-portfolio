@@ -42,3 +42,14 @@ body {
     text-wrap: balance;
   }
 }
+
+@media print {
+  body {
+    background: white !important;
+    color: black !important;
+    min-height: unset;
+  }
+  nav {
+    display: none !important;
+  }
+}
