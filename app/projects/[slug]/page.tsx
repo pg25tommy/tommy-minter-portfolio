@@ -51,15 +51,17 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
         {/* Project Header */}
         <div className="mb-12">
           <div className="flex items-center gap-4 mb-4">
-            <span
-              className={`text-xs font-medium px-3 py-1 rounded-full ${
-                project.metadata.status === "Active"
+            {project.metadata.status.split(",").map((s) => s.trim()).map((s, i) => (
+              <span key={i} className={`text-xs font-medium px-3 py-1 rounded-full ${
+                s === "Active"
                   ? "bg-mint/20 text-mint"
+                  : s === "Shipped"
+                  ? "bg-amber-500/20 text-amber-400"
                   : "bg-moss/20 text-moss-light"
-              }`}
-            >
-              {project.metadata.status}
-            </span>
+              }`}>
+                {s}
+              </span>
+            ))}
             <span className="text-text-secondary text-sm">
               v{project.metadata.version}
             </span>

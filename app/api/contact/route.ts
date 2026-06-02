@@ -1,4 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
+import { Resend } from "resend";
+
+const resend = new Resend(process.env.RESEND_API_KEY);
 
 // Simple in-memory rate limiting
 const rateLimitMap = new Map<string, { count: number; resetTime: number }>();
@@ -119,20 +122,28 @@ export async function POST(req: NextRequest) {
       message: sanitizeInput(body.message),
     };
 
-    // Log the contact form submission (you can replace this with actual email sending)
-    console.log("Contact Form Submission:", {
-      ...sanitizedData,
-      timestamp: new Date().toISOString(),
-      ip: rateLimitKey,
-    });
-
-    // TODO: Send email using a service like SendGrid, Resend, or Nodemailer
-    // Example with console logging for now:
-    console.log(`
-      New Contact Form Submission:
-      From: ${sanitizedData.name} (${sanitizedData.email})
-      Message: ${sanitizedData.message}
-    `);
+    // Send email using Resend
+    try {
+      await resend.emails.send({
+        from: "Portfolio Contact Form <onboarding@resend.dev>",
+        to: process.env.CONTACT_EMAIL || "your-email@example.com",
+        replyTo: sanitizedData.email,
+        subject: `Portfolio Contact: ${sanitizedData.name}`,
+        html: `
+          <h2>New Contact Form Submission</h2>
+          <p><strong>Name:</strong> ${sanitizedData.name}</p>
+          <p><strong>Email:</strong> ${sanitizedData.email}</p>
+          <p><strong>Message:</strong></p>
+          <p>${sanitizedData.message.replace(/\n/g, '<br>')}</p>
+          <hr>
+          <p><small>Sent from your portfolio contact form</small></p>
+        `,
+      });
+    } catch (emailError) {
+      console.error("Failed to send email:", emailError);
+      // Still return success to user even if email fails
+      // You could also throw an error here if you want the user to know
+    }
 
     // Success response
     return NextResponse.json(

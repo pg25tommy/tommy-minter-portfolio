@@ -1,7 +1,7 @@
 ---
 version: 1.0
 owner: Tommy Minter
-status: Released
+status: Shipped
 ---
 
 # Stick Dots — Project Specification

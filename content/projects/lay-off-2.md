@@ -1,7 +1,7 @@
 ---
 version: 2.0
 owner: Tommy Minter
-status: Active
+status: Paused
 ---
 
 # Lay-Off 2.0 — Project Specification

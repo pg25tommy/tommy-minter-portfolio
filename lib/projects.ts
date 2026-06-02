@@ -22,7 +22,7 @@ export interface Project {
 }
 
 export function getAllProjectSlugs(): string[] {
-  return ['softbound', 'lay-off-2', 'lay-off', 'stick-dots', 'catatonic', 'broheat'];
+  return ['burger-heaven', 'softbound', 'lay-off-2', 'lay-off', 'stick-dots', 'catatonic', 'broheat'];
 }
 
 export function getProjectBySlug(slug: string): Project {

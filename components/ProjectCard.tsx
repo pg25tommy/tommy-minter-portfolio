@@ -20,15 +20,19 @@ export default function ProjectCard({ project, index }: ProjectCardProps) {
       className="bg-grey-light border border-moss/20 rounded-lg overflow-hidden hover:border-mint/40 transition-all hover:shadow-lg hover:shadow-mint/10"
     >
       <div className="p-6">
-        {/* Status Badge */}
-        <div className="flex items-center justify-between mb-4">
-          <span className={`text-xs font-medium px-3 py-1 rounded-full ${
-            project.status === "Active"
-              ? "bg-mint/20 text-mint"
-              : "bg-moss/20 text-moss-light"
-          }`}>
-            {project.status}
-          </span>
+        {/* Status Badges */}
+        <div className="flex items-center gap-2 mb-4">
+          {project.status.split(",").map((s) => s.trim()).map((s, i) => (
+            <span key={i} className={`text-xs font-medium px-3 py-1 rounded-full ${
+              s === "Active"
+                ? "bg-mint/20 text-mint"
+                : s === "Shipped"
+                ? "bg-amber-500/20 text-amber-400"
+                : "bg-moss/20 text-moss-light"
+            }`}>
+              {s}
+            </span>
+          ))}
         </div>
 
         {/* Title */}
