@@ -80,10 +80,11 @@ export default function ResumePage() {
           <div className="mb-8">
             <SectionHeading>Summary</SectionHeading>
             <p className="text-sm text-gray-700 leading-relaxed">
-              Motivated programmer and full-stack developer with strong foundations in C++, C#, Unity, Unreal Engine,
-              and modern web technologies including Next.js and TypeScript. Experienced in shader programming, asset optimization,
-              and building production web applications. Passionate about delivering polished, accessible experiences across both
-              games and web — from multiplayer networked gameplay to full-featured client websites.
+              Motivated and passionate Programmer and Technical Artist with strong foundations in C++, C#, Unity, and Unreal Engine.
+              Strong foundation in shader programming, asset optimization, and developing tools to enhance art production workflows.
+              Enthusiastic about coding, improving techniques, and creating polished visual effects. Passionate about incorporating
+              accessibility features in games and committed to raising awareness of accessibility in game development. Expanding into
+              full-stack web development, delivering production client websites using Next.js and TypeScript.
             </p>
           </div>
 
@@ -109,8 +110,9 @@ export default function ResumePage() {
               location="Vancouver, BC"
               dates="Feb 2024 – Aug 2024"
               bullets={[
-                "Delivered a high-quality 3rd-person, 4-player networked multiplayer trap placement game from pre-production to final over 6 months.",
-                "Developed shaders using HLSL and Shader Graph, creating VFX that enhanced the gameplay experience.",
+                "Successfully delivered a high-quality project from pre-production to final over 6 months.",
+                "Developed shaders using HLSL and Shader Graph for a 3rd person, 4-player networked multiplayer trap placement game.",
+                "Created VFX and shaders that enhanced the gameplay experience.",
                 "Focused on optimization for smooth networked gameplay.",
               ]}
             />
@@ -122,8 +124,9 @@ export default function ResumePage() {
               dates="Mar 2024 – Jun 2024"
               bullets={[
                 "Delivered an online multiplayer-ready game with a team of 9 programmers over 4 months.",
-                "Managed the team, oversaw project tasks, conducted code reviews, and ensured quality.",
-                "Programmed core game mechanics and focused on networking for smooth multiplayer interactions.",
+                "Programmed game mechanics for a seamless player experience.",
+                "Managed a diverse team, oversaw project tasks, conducted code reviews, and ensured quality.",
+                "Focused on networking the game for smooth multiplayer interactions.",
               ]}
             />
 
@@ -133,8 +136,8 @@ export default function ResumePage() {
               location="Vancouver, BC (Remote)"
               dates="Jan 2024 – Feb 2024"
               bullets={[
-                "Delivered an end-to-end isometric adventure game with a team of 5 over 2 months.",
-                "Led architecture and implementation of gameplay systems, UI, HUD, and event systems.",
+                "Delivered an end-to-end Isometric adventurer game with a team of 5 over 2 months.",
+                "Played a key role in the architecture and implementation of gameplay, UI, HUD systems, and events.",
               ]}
             />
 
@@ -144,8 +147,8 @@ export default function ResumePage() {
               location="Vancouver, BC (Remote)"
               dates="Jan 2024 – Feb 2024"
               bullets={[
-                "Delivered a brick breaker game built on a custom C++ engine with a team of 2.",
-                "Implemented factory pattern for entity creation and custom collision detection systems.",
+                "Delivered a brick breaker game made in a custom C++ engine with a team of 2.",
+                "Developed custom Factories and Collision systems.",
               ]}
             />
           </section>
