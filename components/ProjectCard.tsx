@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
 import Link from "next/link";
 import type { ProjectMetadata } from "@/lib/projects";
 import TechBadge from "./TechBadge";
@@ -12,7 +12,7 @@ interface ProjectCardProps {
 
 export default function ProjectCard({ project, index }: ProjectCardProps) {
   return (
-    <motion.div
+    <m.div
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
@@ -82,6 +82,6 @@ export default function ProjectCard({ project, index }: ProjectCardProps) {
           </svg>
         </Link>
       </div>
-    </motion.div>
+    </m.div>
   );
 }

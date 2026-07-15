@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
 import Image from "next/image";
 
 export default function Hero() {
@@ -8,43 +8,43 @@ export default function Hero() {
     <section className="min-h-screen flex items-center justify-center px-6 pt-20">
       <div className="max-w-4xl mx-auto text-center">
         {/* Profile Picture */}
-        <motion.div
+        <m.div
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.6 }}
           className="mb-8 flex justify-center"
         >
-          <div className="relative w-32 h-32 rounded-full overflow-hidden border-2 border-mint/30">
+          <div className="w-32 h-32 rounded-full overflow-hidden border-2 border-mint/30">
             <Image
               src="/Me.jpg"
               alt="Tommy Minter"
-              fill
-              sizes="128px"
-              className="object-cover"
+              width={128}
+              height={128}
+              className="object-cover w-full h-full"
               priority
             />
           </div>
-        </motion.div>
+        </m.div>
 
-        <motion.h1
+        <m.h1
           initial={{ y: 20 }}
           animate={{ y: 0 }}
           transition={{ duration: 0.6, delay: 0.1 }}
           className="text-5xl md:text-7xl font-bold mb-6 text-text-primary"
         >
           Tommy Minter
-        </motion.h1>
+        </m.h1>
 
-        <motion.p
+        <m.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.3 }}
           className="text-xl md:text-2xl text-text-secondary mb-8"
         >
           Full-Stack Developer, Game Developer, Technical Artist
-        </motion.p>
+        </m.p>
 
-        <motion.p
+        <m.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.5 }}
@@ -52,9 +52,9 @@ export default function Hero() {
         >
           Building interactive experiences that blend technical precision with creative vision.
           Specializing in web applications, game systems, and custom rendering engines.
-        </motion.p>
+        </m.p>
 
-        <motion.a
+        <m.a
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.7 }}
@@ -73,7 +73,7 @@ export default function Hero() {
           >
             <path d="M19 14l-7 7m0 0l-7-7m7 7V3" />
           </svg>
-        </motion.a>
+        </m.a>
       </div>
     </section>
   );

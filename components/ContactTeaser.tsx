@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
 
 interface ContactTeaserProps {
   onOpenContact: () => void;
@@ -10,7 +10,7 @@ export default function ContactTeaser({ onOpenContact }: ContactTeaserProps) {
   return (
     <section id="contact" className="py-20 px-6">
       <div className="max-w-4xl mx-auto">
-        <motion.div
+        <m.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -40,7 +40,7 @@ export default function ContactTeaser({ onOpenContact }: ContactTeaserProps) {
               View GitHub
             </a>
           </div>
-        </motion.div>
+        </m.div>
       </div>
     </section>
   );

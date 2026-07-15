@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
 
 export default function AboutTeaser() {
   const skills = [
@@ -14,7 +14,7 @@ export default function AboutTeaser() {
   return (
     <section className="py-20 px-6">
       <div className="max-w-6xl mx-auto">
-        <motion.div
+        <m.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -27,11 +27,11 @@ export default function AboutTeaser() {
           <p className="text-text-secondary text-lg">
             Bridging the gap between technical implementation and creative vision
           </p>
-        </motion.div>
+        </m.div>
 
         <div className="grid md:grid-cols-2 gap-6 mb-8">
           {skills.map((skill, index) => (
-            <motion.div
+            <m.div
               key={index}
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -53,7 +53,7 @@ export default function AboutTeaser() {
                 </svg>
               </div>
               <p className="text-text-primary">{skill}</p>
-            </motion.div>
+            </m.div>
           ))}
         </div>
       </div>
