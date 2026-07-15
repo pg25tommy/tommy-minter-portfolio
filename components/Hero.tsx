@@ -19,6 +19,7 @@ export default function Hero() {
               src="/Me.jpg"
               alt="Tommy Minter"
               fill
+              sizes="128px"
               className="object-cover"
               priority
             />
@@ -26,8 +27,8 @@ export default function Hero() {
         </motion.div>
 
         <motion.h1
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
+          initial={{ y: 20 }}
+          animate={{ y: 0 }}
           transition={{ duration: 0.6, delay: 0.1 }}
           className="text-5xl md:text-7xl font-bold mb-6 text-text-primary"
         >
